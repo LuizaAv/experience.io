@@ -50,7 +50,7 @@ li{
     margin-right: 50px;
 }
 
-.devCamperLi{
+.devCamper{
     position: absolute;
     width: 175px;
     height: 30px;
@@ -65,7 +65,7 @@ li{
     color: #FFFFFF;
 }
 
-.loginLi{
+.login{
     position: absolute;
     width: 44px;
     height: 24px;
@@ -80,7 +80,7 @@ li{
     color: rgba(255, 255, 255, 0.5);
 }
 
-.registerLi{
+.register{
     position: absolute;
     width: 61px;
     height: 24px;
@@ -95,7 +95,7 @@ li{
     color: rgba(255, 255, 255, 0.5);
 }
 
-.browsecampsLi{
+.browsecamps{
     position: absolute;
     width: 134px;
     height: 24px;
