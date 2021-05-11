@@ -1,0 +1,157 @@
+.mainDiv{
+    position: absolute;
+    width: 540px;
+    height: 484px;
+    left: 690px;
+    top: 104px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    box-sizing: border-box;
+    border-radius: 0px;
+}
+
+.title{
+    position: absolute;
+    width: 112px;
+    height: 48px;
+    left: 775px;
+    top: 146px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+    z-index: 1;
+
+    color: #212529;
+}
+
+.introPage{
+    position: absolute;
+    width: 393px;
+    height: 48px;
+    left: 735px;
+    top: 206px;
+    text-align: left;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 1;
+
+    color: #212529;
+}
+
+.emailLabel {
+    position: absolute;
+    width: 99px;
+    height: 24px;
+    left: 735px;
+    top: 269px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    z-index: 1;
+
+    color: #212529;
+}
+
+.passwordLabel{
+    position: absolute;
+    width: 66px;
+    height: 24px;
+    left: 735px;
+    top: 355px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    z-index: 1;
+
+    color: #212529;
+}
+
+.emailInput {
+    position: absolute;
+    width: 450px;
+    height: 38px;
+    left: 735px;
+    top: 301px;
+
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    box-sizing: border-box;
+    border-radius: 0px;
+    z-index: 1;
+}
+.passwordInput {
+    position: absolute;
+    width: 450px;
+    height: 38px;
+    left: 735px;
+    top: 387px;
+
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    box-sizing: border-box;
+    border-radius: 0px;
+    z-index: 1;
+}
+
+button{
+    position: absolute;
+    width: 450px;
+    height: 38px;
+    left: 735px;
+    top: 449px;
+
+    background: #E05433;
+    border: 1px solid #E05433;
+    box-sizing: border-box;
+    border-radius: 0px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.forgotPassword{
+    position: absolute;
+    width: 129px;
+    height: 24px;
+    left: 735px;
+    top: 503px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 1;
+
+    color: #212529;
+}
+
+.resetPassword {
+    position: absolute;
+    width: 108px;
+    height: 24px;
+    left: 864px;
+    top: 503px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    z-index: 1;
+
+    color: #E05433;
+}

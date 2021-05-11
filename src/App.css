@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,26 +9,181 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar{
+  position: absolute;
+  width: 1920px;
+  height: 56px;
+  left: 0px;
+  top: 0px;
+
+  background: #E05433;
+  border-radius: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo{
+  position: absolute;
+  left: 22%;
+  right: 0%;
+  margin-top: 0%;
+  bottom: 20%;
+  height: 29px;
+  width: 36px;
+
+  background: #FFFFFF;
+  background: url(Vector.png);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.links{
+  text-decoration: none;
+  color: #FFFFFF;
 }
+
+ul {
+    list-style-type: none;
+    margin-left: 430px;
+    margin-top: 13px;
+}
+
+li{
+    float: left;
+    margin-right: 50px;
+}
+
+.devCamperLi{
+    position: absolute;
+    width: 175px;
+    height: 30px;
+    left: 430px;
+    top: 13px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.loginLi{
+    position: absolute;
+    width: 44px;
+    height: 24px;
+    left: 1196px;
+    top: 16px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.registerLi{
+    position: absolute;
+    width: 61px;
+    height: 24px;
+    left: 1276px;
+    top: 16px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.browsecampsLi{
+    position: absolute;
+    width: 134px;
+    height: 24px;
+    left: 1373px;
+    top: 16px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.textField{
+    position: absolute;
+    width: 538px;
+    height: 68px;
+    left: 691px;
+    top: 380px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 53px;
+    line-height: 67px;
+
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.pageIntro{
+    position: absolute;
+    width: 414px;
+    height: 30px;
+    left: 753px;
+    top: 459px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 30px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.milesInput{
+    position: absolute;
+    width: 540px;
+    height: 38px;
+    left: 405px;
+    top: 505px;
+
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    box-sizing: border-box;
+    border-radius: 0px;
+}
+
+.zipcodeInput{
+    position: absolute;
+    width: 540px;
+    height: 38px;
+    left: 975px;
+    top: 505px;
+
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    box-sizing: border-box;
+    border-radius: 0px;
+  }
+
+ .btn{
+    position: absolute;
+    width: 1110px;
+    height: 38px;
+    left: 405px;
+    top: 559px;
+    
+    background: #E05433;
+    border: 1px solid #E05433;
+    box-sizing: border-box;
+    border-radius: 0px;
+    color: #FFFFFF;
+ }
+
+ 

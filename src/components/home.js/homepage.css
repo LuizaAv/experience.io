@@ -1,0 +1,9 @@
+.mainContainer{
+    width: 1920px;
+    height: 880px;
+    left: -15px;
+    top: 31px;
+    z-index: -1;
+    
+    background: url(background.png);
+}
