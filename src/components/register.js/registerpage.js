@@ -1,7 +1,32 @@
-import React from "react";
+import React, {useState} from "react";
 import "./registerpage.css";
 
 function RegisterPage(){
+    const [fullName, setFullName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [passwordConfirm, setPasswordConfirm] = useState("");
+
+    const fullNameChangeHandler = (e) => {
+        setFullName(e.target.value)
+        console.log(fullName)
+    }
+
+    const emailChangeHandler = (e) => {
+        setEmail(e.target.value)
+        console.log(email)
+    }
+
+    const passwordChangeHandler = (e) => {
+        setPassword(e.target.value)
+        console.log(password)
+    }
+
+    const passwordConfirmChangeHandler = (e) => {
+        setPasswordConfirm(e.target.value)
+        console.log(passwordConfirm)
+    } 
+
     return(
         <div>
             <div className="registration">
@@ -10,20 +35,54 @@ function RegisterPage(){
             <div className="introReg">
                 Register to list your bootcamp or rate, review and  favorite bootcamps
             </div>
-            <label className="nameLabel">Name</label>
-                <input placeholder="Enter Full Name" className ="nameInput"/>
-            <label className="regEmailLabel">Email Address</label>
-                <input placeholder="Enter Email" className ="regEmailInput"/>
-            <label className="regPassword">Password</label>
-                <input placeholder="Enter Password" className ="regPasswordInput"/>
-            <label className="regPasswordConfirm">Confirm Password</label>
-                <input placeholder="Confirm Password" className ="regPasswordConfirmInput"/>
+            <label className="nameLabel">
+                Name
+            </label>
+                <input 
+                placeholder="Enter Full Name" 
+                className ="nameInput"
+                onChange = {fullNameChangeHandler}
+                value = {fullName}
+                />
+            <label className="regEmailLabel">
+                Email Address
+            </label>
+                <input 
+                placeholder="Enter Email" 
+                className ="regEmailInput"
+                onChange = {emailChangeHandler}
+                value = {email}
+                />
+            <label className="regPassword">
+                Password
+            </label>
+                <input 
+                placeholder="Enter Password" 
+                className ="regPasswordInput"
+                onChange = {passwordChangeHandler}
+                value = {password}
+                />
+            <label className="regPasswordConfirm">
+                Confirm Password
+            </label>
+                <input 
+                placeholder="Confirm Password" 
+                className ="regPasswordConfirmInput"
+                onChange = {passwordConfirmChangeHandler}
+
+                />
             <div className="radioBtns">
                 <p className="role">User Role</p>
-                <input type="radio" className="regularUser" value="Regular User"/>
+                <input 
+                type="radio" 
+                className="regularUser" 
+                value="Regular User"/>
                 <label>Regular User (Browse, Write reviews, etc)</label>
-                <br/>
-                <input type="radio" className="publisher" value="Publisher"/>
+                    <br/>
+                <input 
+                type="radio" 
+                className="publisher" 
+                value="Publisher"/>
                 <label>Bootcamp Publisher</label>
             </div>
             
