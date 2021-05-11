@@ -1,9 +1,10 @@
-.mainDiv{
-    position: absolute;
+.mainDiv {
+    margin: auto;
     width: 540px;
     height: 484px;
     left: 690px;
-    top: 104px;
+    margin-top: -180px;
+    margin-left: 680px;
 
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.125);
@@ -11,12 +12,11 @@
     border-radius: 0px;
 }
 
-.title{
-    position: absolute;
-    width: 112px;
-    height: 48px;
-    left: 775px;
-    top: 146px;
+.title {
+    width: 560px;
+    height: 560px;
+    margin-left: 760px;
+    margin-top: 150px;
 
     font-family: Roboto;
     font-style: normal;
@@ -29,11 +29,11 @@
 }
 
 .introPage{
-    position: absolute;
     width: 393px;
     height: 48px;
     left: 735px;
-    top: 206px;
+    margin-top: -500px;
+    margin-left: 720px;
     text-align: left;
 
     font-family: Roboto;
@@ -47,35 +47,31 @@
 }
 
 .emailLabel {
-    position: absolute;
     width: 99px;
     height: 24px;
     left: 735px;
-    top: 269px;
+    margin-left: 720px;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 24px;
-    z-index: 1;
 
     color: #212529;
 }
 
 .passwordLabel{
-    position: absolute;
     width: 66px;
     height: 24px;
     left: 735px;
-    top: 355px;
+    margin-left: 720px;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    z-index: 1;
 
     color: #212529;
 }

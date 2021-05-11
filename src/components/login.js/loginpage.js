@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./loginpage.css"
 
 function Loginpage(){
     const [userEmail, setUserEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [loggedIn, setLoggedIn] =  useState("Login")
 
     let newUser = {
         "email": userEmail, 
@@ -12,17 +13,24 @@ function Loginpage(){
 
     const emailChangeHandler = (e) => {
         setUserEmail(e.target.value)
-        //console.log(userEmail)
     }
 
     const passwordChangeHandler = (e) => {
         setPassword(e.target.value)
-        console.log(password)
     }
 
     const clickHandler = (e) => {
         console.log(newUser)
+        if(userEmail === "luiza@gmail.com"){
+            setLoggedIn("Logout")
+        }else{
+            setLoggedIn("Login")
+        }
     }
+
+    useEffect(()=>{
+        
+    },[])
 
     return(
         <div>

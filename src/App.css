@@ -1,38 +1,3 @@
-.App {
-  text-align: center;
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.navbar{
-  position: absolute;
-  width: 1920px;
-  height: 56px;
-  left: 0px;
-  top: 0px;
-
-  background: #E05433;
-  border-radius: 0px;
-}
-
-.logo{
-  position: absolute;
-  left: 22%;
-  right: 0%;
-  margin-top: 0%;
-  bottom: 20%;
-  height: 29px;
-  width: 36px;
-
-  background: #FFFFFF;
-  background: url(Vector.png);
-}
-
 
 .links{
   text-decoration: none;

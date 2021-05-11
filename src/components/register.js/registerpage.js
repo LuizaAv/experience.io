@@ -6,26 +6,33 @@ function RegisterPage(){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordConfirm, setPasswordConfirm] = useState("");
+    const [role, setRole] = useState("");
+
+    let user = {
+        "name": fullName, 
+        "email": email, 
+        "password":  password, 
+        "role": role
+    }
+
 
     const fullNameChangeHandler = (e) => {
         setFullName(e.target.value)
-        console.log(fullName)
     }
 
     const emailChangeHandler = (e) => {
         setEmail(e.target.value)
-        console.log(email)
     }
 
     const passwordChangeHandler = (e) => {
         setPassword(e.target.value)
-        console.log(password)
     }
 
     const passwordConfirmChangeHandler = (e) => {
         setPasswordConfirm(e.target.value)
-        console.log(passwordConfirm)
     } 
+
+    
 
     return(
         <div>
@@ -69,7 +76,7 @@ function RegisterPage(){
                 placeholder="Confirm Password" 
                 className ="regPasswordConfirmInput"
                 onChange = {passwordConfirmChangeHandler}
-
+                value = {passwordConfirm}
                 />
             <div className="radioBtns">
                 <p className="role">User Role</p>
