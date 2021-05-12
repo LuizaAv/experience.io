@@ -1,4 +1,4 @@
-import React from "react";
+
 import './navbar.css';
 
 import {
@@ -7,23 +7,17 @@ import {
 
 const Navbar = () => {
   return (
-    <div>
-      <nav className="navbar">
-        <img className="logo" />
-        <NavLink to="/" class="links">
-          <div className="devCamper">DevCamper</div>
-        </NavLink>
-        <NavLink to="/login" class="links" >
+    <nav className="navbar">
+        <NavLink to="/login" >
           <div className="login">Login</div>
         </NavLink>
-        <NavLink to="/register" class="links">
+        <NavLink to="/register">
           <div className="register">Register</div>
         </NavLink>
-        <NavLink to="/browseBootcamp" class="links">
-          <div className="browsecamps">Browse Bootcamps</div>
+        <NavLink to="/browseBootcamp">
+          <div className="browsecamps">BrowseBootcamps</div>
         </NavLink>
-      </nav>
-    </div>
+    </nav>
   )
 }
 

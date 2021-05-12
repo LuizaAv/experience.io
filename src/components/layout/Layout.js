@@ -1,11 +1,11 @@
 import Mainroutes from "../../mainroutes"
-import Nav from "../navbar/Navbar"
+import Header from "../header/Header"
 
-const Layout  =()=>{
-    return(
+const Layout = () => {
+    return (
         <>
-        <Nav />
-        <Mainroutes />
+            <Header />
+            <Mainroutes />
         </>
     )
 }

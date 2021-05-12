@@ -1,10 +1,9 @@
-.mainDiv {
+.mainDiv{
     margin: auto;
     width: 540px;
     height: 484px;
     left: 690px;
-    margin-top: -180px;
-    margin-left: 680px;
+    margin-top: 104px;
 
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.125);
@@ -12,19 +11,17 @@
     border-radius: 0px;
 }
 
-.title {
+.title{
     width: 560px;
     height: 560px;
-    margin-left: 760px;
-    margin-top: 150px;
+    margin-left: 60px;
+    margin-top: 30px;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
     line-height: 48px;
-    z-index: 1;
-
     color: #212529;
 }
 
@@ -33,7 +30,7 @@
     height: 48px;
     left: 735px;
     margin-top: -500px;
-    margin-left: 720px;
+    margin-left: 40px;
     text-align: left;
 
     font-family: Roboto;
@@ -41,102 +38,98 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    z-index: 1;
-
     color: #212529;
+
 }
 
-.emailLabel {
+.emailLabel{
     width: 99px;
     height: 24px;
     left: 735px;
-    margin-left: 720px;
+    margin-left: 40px;
+    margin-top: 165px;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 24px;
-
+    
     color: #212529;
+}
+
+.emailInput{
+    width: 450px;
+    height: 38px;
+    left: 735px;
+    top: 301px;
+    margin-left: 40px;
+    margin-top: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    box-sizing: border-box;
+    border-radius: 0px;
 }
 
 .passwordLabel{
     width: 66px;
     height: 24px;
     left: 735px;
-    margin-left: 720px;
+    margin-left: 40px;
+    margin-top: 261px;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-
     color: #212529;
 }
 
-.emailInput {
-    position: absolute;
-    width: 450px;
-    height: 38px;
-    left: 735px;
-    top: 301px;
-
-    background: #FFFFFF;
-    border: 1px solid #CED4DA;
-    box-sizing: border-box;
-    border-radius: 0px;
-    z-index: 1;
-}
-.passwordInput {
-    position: absolute;
+.passwordInput{
     width: 450px;
     height: 38px;
     left: 735px;
     top: 387px;
+    margin-left: 40px;
 
     background: #FFFFFF;
     border: 1px solid #CED4DA;
     box-sizing: border-box;
     border-radius: 0px;
-    z-index: 1;
 }
 
 button{
-    position: absolute;
     width: 450px;
     height: 38px;
     left: 735px;
-    top: 449px;
+    margin-left: 40px;
+    margin-top: 25px;
 
     background: #E05433;
     border: 1px solid #E05433;
     box-sizing: border-box;
     border-radius: 0px;
     color: #FFFFFF;
-    z-index: 1;
 }
 
 .forgotPassword{
-    position: absolute;
     width: 129px;
     height: 24px;
     left: 735px;
     top: 503px;
+    margin-left: 40px;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    z-index: 1;
-
     color: #212529;
 }
 
-.resetPassword {
-    position: absolute;
+.resetPassword{
     width: 108px;
     height: 24px;
     left: 864px;
@@ -147,7 +140,6 @@ button{
     font-weight: normal;
     font-size: 15px;
     line-height: 24px;
-    z-index: 1;
-
+    
     color: #E05433;
 }

@@ -1,9 +1,111 @@
 .mainContainer{
-    width: 1920px;
-    height: 880px;
-    left: -15px;
-    top: 31px;
-    z-index: -1;
-    
-    background: url(background.png);
+    width: 100%;
+    margin: auto;
 }
+.img{
+    width: 100%;
+    height: 100vh;
+}
+
+.textField{
+    position: absolute;
+    width: 538px;
+    height: 68px;
+    left: 691px;
+    top: 380px;
+    
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 53px;
+    line-height: 67px;
+
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.pageIntro{
+    position: absolute;
+    width: 414px;
+    height: 30px;
+    left: 753px;
+    top: 460px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 30px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.flex-container-main{
+    display: flex;
+    flex-direction: column;
+    bottom: 50px;
+}
+
+.flex-container-inputs{
+    flex-direction: row;
+    flex: 50%;
+    height: 80px;
+    width: 500px;
+    top: 450px;
+    margin-top: 50px;
+    margin-left: 430px;
+}
+
+.zipcodeInput{
+    width: 540px;
+    height: 38px;
+    left: 975px;
+    top: 505px;
+    margin-left: 30px;
+    margin-top: 25px;
+
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    box-sizing: border-box;
+    border-radius: 0px;
+}
+
+.milesInput{
+    width: 540px;
+    height: 38px;
+    left: 405px;
+    top: 505px;
+    margin-left: 405px;
+
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    box-sizing: border-box;
+    border-radius: 0px;
+}
+
+.btn{
+    width: 1110px;
+    height: 38px;
+    left: 405px;
+    top: 559px;
+    margin-left: 405px;
+    margin-top: 30px;
+    
+    background: #E05433;
+    border: 1px solid #E05433;
+    box-sizing: border-box;
+    border-radius: 0px;
+    color: #FFFFFF;
+}
+
+.inputContainer{
+    margin-top: -400px;
+}
+
+
+
+
+

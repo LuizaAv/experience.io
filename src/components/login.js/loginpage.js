@@ -33,7 +33,7 @@ function Loginpage(){
     },[])
 
     return(
-        <div>
+        <div className="mainDiv">
             <div className="title">
                 Login
             </div>
@@ -63,16 +63,14 @@ function Loginpage(){
                 <a 
                 className="forgotPassword" 
                 href="">
-                    Forgot password
+                    Forgot password?
                 </a>
                 <a 
                 className="resetPassword" 
                 href="">
                     Reset password
                 </a>
-            </div>
-            <div className="mainDiv">
-            </div>
+             </div>
         </div>
     )
 }

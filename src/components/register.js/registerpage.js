@@ -35,7 +35,7 @@ function RegisterPage(){
     
 
     return(
-        <div>
+        <div className="mainDiv">
             <div className="registration">
                 Register
             </div>
@@ -82,14 +82,17 @@ function RegisterPage(){
                 <p className="role">User Role</p>
                 <input 
                 type="radio" 
+                name="mmm"
                 className="regularUser" 
                 value="Regular User"/>
                 <label>Regular User (Browse, Write reviews, etc)</label>
                     <br/>
                 <input 
                 type="radio" 
+                name="mmm"
                 className="publisher" 
                 value="Publisher"/>
+                
                 <label>Bootcamp Publisher</label>
             </div>
             
@@ -97,7 +100,8 @@ function RegisterPage(){
             </div>
             <div >
                 <a href="" className = "warning">
-                    * You must be  affiliated with the  bootcamp in some way  in order to add it to DevCamper
+                    <p>You must be  affiliated with the  bootcamp 
+                    in some way  in order to add it to DevCamper</p>
                 </a>
             </div>
             <button className="regButton">Register</button>

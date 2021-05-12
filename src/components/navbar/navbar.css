@@ -1,9 +1,128 @@
 .navbar{
-    width: 1920px;
-    height: 56px;
-    left: 0px;
-    top: 0px;
-  
-    background: #E05433;
-    border-radius: 0px;
+  display: flex;
+  margin-right: 303px;
+}
+
+@media (max-width: 583px) {
+  .navbar{
+    display: flex;
+    margin-right: 50px;
   }
+  .login{
+    margin-left: 300px;
+    margin: 10px;
+    font-size: 12px;
+  }
+
+  .register{
+    margin: 10px;
+    font-size: 12px;
+  }
+
+  .browsecamps{
+    margin: 10px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 584px) and (max-device-width: 800px){
+  .navbar{
+    display: flex;
+    margin-right: 80px;
+  }
+  .login{
+    margin-left: 290px;
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  .register{
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  .browsecamps{
+    margin: 10px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-device-width: 801px) and (max-device-width: 1024px){
+  .navbar{
+    display: flex;
+    margin-right: 150px;
+  }
+  .login{
+    margin-left: 250px;
+    margin: 10px;
+    font-size: 13px;
+  }
+
+  .register{
+    margin: 10px;
+    font-size: 13px;
+  }
+
+  .browsecamps{
+    margin: 10px;
+    font-size: 13px;
+  }
+}
+
+
+
+
+.login{
+  flex: 30%;
+  width: 44px;
+  height: 24px;
+  margin-top: 13px;
+  margin: 20px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.register{
+  flex: 30%;
+  width: 44px;
+  height: 24px;
+  margin-top: 13px;
+  margin: 20px;
+
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.browsecamps{
+  flex: 30%;
+  width: 44px;
+  height: 24px;
+  margin-top: 13px;
+  margin: 20px;
+
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+
+}
+
+a {
+  text-decoration: none;
+}
