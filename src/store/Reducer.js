@@ -4,13 +4,16 @@ import {
     REGISTER_FAILURE,
     LOGIN_REQUEST,
     LOGIN_SUCCESS,
-    LOGIN_FAILURE
+    LOGIN_FAILURE, 
+    action
 } from "./Actions";
 
 const initialState = {
     "email": "",
     "password": ""
 }
+
+
 export function RegisterReducer(state = {}, action){
     switch(action.type){
         case REGISTER_REQUEST:
@@ -34,8 +37,17 @@ export function LoginReducer(state = initialState, action){
         case  LOGIN_SUCCESS:
             return {
                 success: true,
+                ...state
             };
         case LOGIN_FAILURE:
             return {}
+    }
+}
+
+
+export function rootReducer () {
+    return {
+        LoginReducer, 
+        RegisterReducer
     }
 }
