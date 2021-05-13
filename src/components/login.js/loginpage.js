@@ -1,11 +1,6 @@
 import React, {useEffect, useState} from "react";
-import axios  from "axios";
 import "./loginpage.css";
 
-// export let  newUser = {
-//     "email": userEmail, 
-//     "password": password
-// }
 
 function Loginpage(){
     const [userEmail, setUserEmail] = useState("");
@@ -20,13 +15,6 @@ function Loginpage(){
     const passwordChangeHandler = (e) => {
         setPassword(e.target.value)
     }
-
-    // const clickHandler = (e) => {
-    //     console.log(newUser)
-    // }
-    
-    
-    
 
     return(
         <div className="mainDiv">
@@ -52,7 +40,7 @@ function Loginpage(){
                 className="passwordInput"
                 onChange = {passwordChangeHandler}
                 />
-            <button onClick={()=>{}}>
+            <button >
                 Login
             </button>
             <div>
