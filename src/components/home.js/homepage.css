@@ -7,6 +7,8 @@
     height: 100vh;
 }
 
+
+
 .textField{
     position: absolute;
     width: 538px;
@@ -14,7 +16,6 @@
     left: 691px;
     top: 380px;
     
-
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -30,34 +31,21 @@
     width: 414px;
     height: 30px;
     left: 753px;
-    top: 460px;
+    top: 480px;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 19px;
     line-height: 30px;
-
     text-align: center;
-
     color: #FFFFFF;
 }
 
-.flex-container-main{
-    display: flex;
-    flex-direction: column;
-    bottom: 50px;
+.inputContainer{
+    margin-top: -580px;
 }
 
-.flex-container-inputs{
-    flex-direction: row;
-    flex: 50%;
-    height: 80px;
-    width: 500px;
-    top: 450px;
-    margin-top: 50px;
-    margin-left: 430px;
-}
 
 .zipcodeInput{
     width: 540px;
@@ -101,11 +89,193 @@
     color: #FFFFFF;
 }
 
-.inputContainer{
-    margin-top: -400px;
-}
 
 
+@media (max-width: 583px) {
+    .textField{
+        position: absolute;
+        width: 538px;
+        height: 68px;
+        left: -10px;
+        top: 380px;
+        
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 67px;
+    
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .pageIntro{
+        position: absolute;
+        width: 414px;
+        height: 30px;
+        left: 60px;
+        top: 450px;
+    
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .zipcodeInput{
+        width: 300px;
+        height: 38px;
+        left: 100px;
+        margin-left: 120px;
+        margin-top: 25px;
+    
+        background: #FFFFFF;
+        border: 1px solid #CED4DA;
+        box-sizing: border-box;
+        border-radius: 0px;
+    }
+
+    .milesInput{
+        width: 300px;
+        height: 38px;
+        left: 100px;
+        margin-left: 120px;
+    
+        background: #FFFFFF;
+        border: 1px solid #CED4DA;
+        box-sizing: border-box;
+        border-radius: 0px;
+    }
+    
+    .btn{
+        width: 300px;
+        height: 38px;
+        left: 100px;
+        top: 515px;
+        margin-left: 120px;
+        margin-top: 30px;
+        
+        background: #E05433;
+        border: 1px solid #E05433;
+        box-sizing: border-box;
+        border-radius: 0px;
+        color: #FFFFFF;
+    }
+  }
 
 
+@media only screen and (min-device-width: 584px) and (max-device-width: 800px){
+    .textField{
+        position: absolute;
+        width: 538px;
+        height: 68px;
+        top: 380px;
+        margin-left: 150px;
+        
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 53px;
+        line-height: 67px;
+    
+        text-align: center;
+        color: #FFFFFF;
+    }
 
+    .pageIntro{
+        position: absolute;
+        width: 414px;
+        height: 30px;
+        left: 150px;
+        top: 480px;
+    
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .zipcodeInput{
+        width: 300px;
+        height: 38px;
+        left: 100px;
+        margin-left: 120px;
+        margin-top: 25px;
+    
+        background: #FFFFFF;
+        border: 1px solid #CED4DA;
+        box-sizing: border-box;
+        border-radius: 0px;
+    }
+
+    .milesInput{
+        width: 300px;
+        height: 38px;
+        left: 100px;
+        margin-left: 120px;
+    
+        background: #FFFFFF;
+        border: 1px solid #CED4DA;
+        box-sizing: border-box;
+        border-radius: 0px;
+    }
+    
+    .btn{
+        width: 300px;
+        height: 38px;
+        left: 100px;
+        top: 515px;
+        margin-left: 120px;
+        margin-top: 30px;
+        
+        background: #E05433;
+        border: 1px solid #E05433;
+        box-sizing: border-box;
+        border-radius: 0px;
+        color: #FFFFFF;
+    }
+  }
+
+
+@media only screen and (min-device-width: 801px) and (max-device-width: 1024px){
+    .textField{
+        position: absolute;
+        width: 538px;
+        height: 68px;
+        left: 200px;
+        top: 380px;
+        
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 53px;
+        line-height: 67px;
+    
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .pageIntro{
+        position: absolute;
+        width: 414px;
+        height: 30px;
+        left: 250px;
+        top: 480px;
+    
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+
+  }

@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from "react";
+import axios  from "axios";
 import "./loginpage.css"
 
 function Loginpage(){
     const [userEmail, setUserEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [loggedIn, setLoggedIn] =  useState("Login")
+    const [resp, setResponse] = useState([])
 
     let newUser = {
         "email": userEmail, 
@@ -20,26 +21,26 @@ function Loginpage(){
     }
 
     const clickHandler = (e) => {
-        console.log(newUser)
-        if(userEmail === "luiza@gmail.com"){
-            setLoggedIn("Logout")
-        }else{
-            setLoggedIn("Login")
-        }
-    }
-
-    useEffect(()=>{
         
-    },[])
+    }
+    
+    /*
+    useEffect(() => {
+        async function fetchingData(){
+            const result = await axios.get("http://devcamp-api-node.herokuapp.com/api/v1/auth/me")
+            console.log(result)
+        }
+        fetchingData()
+    }, [])*/
 
     return(
         <div className="mainDiv">
-            <div className="title">
+            <h2 className="title">
                 Login
-            </div>
-            <div className="introPage">
+            </h2>
+            <p className="introPage">
                 Log in to list your bootcamp or rate, review and favorite bootcamps
-            </div>
+            </p>
             <label className="emailLabel">
                 Email Address
             </label>

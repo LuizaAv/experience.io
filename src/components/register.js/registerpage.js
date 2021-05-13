@@ -36,12 +36,12 @@ function RegisterPage(){
 
     return(
         <div className="mainDiv">
-            <div className="registration">
+            <h2 className="registration">
                 Register
-            </div>
-            <div className="introReg">
+            </h2>
+            <p className="introReg">
                 Register to list your bootcamp or rate, review and  favorite bootcamps
-            </div>
+            </p>
             <label className="nameLabel">
                 Name
             </label>
