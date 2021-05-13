@@ -13,12 +13,13 @@ function Homepage() {
           Find, rate and  read reviews on coding bootcamps
           </p>
         <div className="inputContainer">
+          <div className="inputs">
           <input type="text" placeholder="Miles from" className="milesInput" />
           <input type="text" placeholder="Enter Zipcode" className="zipcodeInput" />
+          <button className="btn" type="submit">Find Bootcamp</button>
+          </div> 
+        
         </div>
-        <button className="btn" type="submit">
-          Find Bootcamp
-          </button>
     </div>
   )
 }

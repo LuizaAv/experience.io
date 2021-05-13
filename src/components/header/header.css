@@ -39,6 +39,13 @@ span{
         margin-left: 70px;
         margin-top: 14px;
     }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        height: 56px;
+        width: 154vw;
+        background: #E05433;
+    }
 }
 
 @media only screen and (min-device-width: 801px) and (max-device-width: 1024px){

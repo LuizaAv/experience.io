@@ -1,16 +1,17 @@
 import React, {useEffect, useState} from "react";
 import axios  from "axios";
-import "./loginpage.css"
+import "./loginpage.css";
+
+// export let  newUser = {
+//     "email": userEmail, 
+//     "password": password
+// }
 
 function Loginpage(){
     const [userEmail, setUserEmail] = useState("");
     const [password, setPassword] = useState("");
     const [resp, setResponse] = useState([])
 
-    let newUser = {
-        "email": userEmail, 
-        "password": password
-    }
 
     const emailChangeHandler = (e) => {
         setUserEmail(e.target.value)
@@ -20,18 +21,12 @@ function Loginpage(){
         setPassword(e.target.value)
     }
 
-    const clickHandler = (e) => {
-        
-    }
+    // const clickHandler = (e) => {
+    //     console.log(newUser)
+    // }
     
-    /*
-    useEffect(() => {
-        async function fetchingData(){
-            const result = await axios.get("http://devcamp-api-node.herokuapp.com/api/v1/auth/me")
-            console.log(result)
-        }
-        fetchingData()
-    }, [])*/
+    
+    
 
     return(
         <div className="mainDiv">
@@ -57,7 +52,7 @@ function Loginpage(){
                 className="passwordInput"
                 onChange = {passwordChangeHandler}
                 />
-            <button onClick={clickHandler}>
+            <button onClick={()=>{}}>
                 Login
             </button>
             <div>
