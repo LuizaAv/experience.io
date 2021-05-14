@@ -1,35 +1,20 @@
+import {registerStart,registerSuccess,registerFailure} from '../store/actionTypes'
+import axios from 'axios'
 
-export const REGISTER_REQUEST = "REGISTER_REQUEST";
-export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
-export const REGISTER_FAILURE = "REGISTER_FAILURE";
+const loginURL = "http://devcamp-api-node.herokuapp.com/api/v1/auth/login";
+const registerURL = "http://devcamp-api-node.herokuapp.com/api/v1/auth/register";
 
+export const register = (values) => {
+    return async dispatch => {
+        try {
+              dispatch(registerStart())
+        const response = await axios.post(registerURL);
+        dispatch(registerSuccess(response));
+      }
+      catch(error) {
+        dispatch(registerFailure(error));
+        console.log(error)
+      }
+    }
 
-export const LOGIN_REQUEST = "LOGIN_REQUEST";
-export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
-export const LOGIN_FAILURE = "LOGIN_FAILURE";
-
-
-export function registerRequest(payload){
-    return {type: REGISTER_REQUEST, payload}
-}
-
-export function registerSuccess(payload){
-    return {type: REGISTER_SUCCESS, payload}
-}
-
-export function registerFailure(payload){
-    return {type: REGISTER_FAILURE, payload}
-}
-
-export function loginRequest(payload){
-    return {type: LOGIN_REQUEST, payload}
-}
-
-export function loginSuccess(payload){
-    return {type: LOGIN_SUCCESS, payload}
-}
-
-export function loginFailure(payload){
-    return {type: LOGIN_FAILURE, payload}
-}
-
+  }

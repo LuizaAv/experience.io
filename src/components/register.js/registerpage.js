@@ -1,4 +1,6 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
+import { useDispatch } from "react-redux";
+import { register } from "../../store/actions";
 import "./registerpage.css";
 
 function RegisterPage(){
@@ -6,15 +8,9 @@ function RegisterPage(){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordConfirm, setPasswordConfirm] = useState("");
-    const [role, setRole] = useState("");
+    const [user, setUser] = useState("");
 
-    let user = {
-        "name": fullName, 
-        "email": email, 
-        "password":  password, 
-        "role": role
-    }
-
+    const dispatch = useDispatch()
 
     const fullNameChangeHandler = (e) => {
         setFullName(e.target.value)
@@ -32,6 +28,21 @@ function RegisterPage(){
         setPasswordConfirm(e.target.value)
     } 
 
+    const submitUser = (e) => {
+        e.preventDefault();
+        setUser({
+                "name": fullName,
+                "email": email,
+                "password": password,
+                "role": "publisher"
+                }
+            )
+        //console.log(user)
+    }
+
+    useEffect (()=>{
+        dispatch(register(user))
+    },[dispatch])
     
 
     return(
@@ -104,7 +115,13 @@ function RegisterPage(){
                     in some way  in order to add it to DevCamper</p>
                 </a>
             </div>
-            <button className="regButton">Register</button>
+                <button 
+                className="regButton"
+                type="submit"
+                onClick={submitUser}
+                >
+                    Register
+                </button>
             <div className="main">
             </div>
         </div>

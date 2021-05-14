@@ -1,22 +1,20 @@
+
 import {
-    REGISTER_REQUEST, 
+    REGISTER_START, 
     REGISTER_SUCCESS, 
     REGISTER_FAILURE,
     LOGIN_REQUEST,
     LOGIN_SUCCESS,
-    LOGIN_FAILURE, 
-    action
-} from "./Actions";
+    LOGIN_FAILURE
+} from "./actionTypes";
 
 const initialState = {
-    "email": "",
-    "password": ""
+
 }
 
-
-export function RegisterReducer(state = {}, action){
+export function RegisterReducer(state =initialState, action){
     switch(action.type){
-        case REGISTER_REQUEST:
+        case REGISTER_START:
             return {success: true};
         case REGISTER_SUCCESS:
             return {};
@@ -28,26 +26,22 @@ export function RegisterReducer(state = {}, action){
 }
 
 
-export function LoginReducer(state = initialState, action){
+export function LoginReducer(state=initialState , action){
     switch(action.type){
         case LOGIN_REQUEST:
-            return {
-                success: true,  
-            };
+            return {lodding: true};
         case  LOGIN_SUCCESS:
             return {
                 success: true,
+                lodding: false,
                 ...state
             };
         case LOGIN_FAILURE:
-            return {}
+            return {};
+
+        default:
+            return state
     }
 }
 
 
-export function rootReducer () {
-    return {
-        LoginReducer, 
-        RegisterReducer
-    }
-}
