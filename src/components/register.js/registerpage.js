@@ -1,6 +1,7 @@
+import axios from "axios";
 import React, {useEffect, useState} from "react";
 import { useDispatch } from "react-redux";
-import { register } from "../../store/actions";
+import { register } from "../../store/actionstest";
 import "./registerpage.css";
 
 function RegisterPage(){
@@ -28,21 +29,32 @@ function RegisterPage(){
         setPasswordConfirm(e.target.value)
     } 
 
-    const submitUser = (e) => {
+    const registerURL = "http://devcamp-api-node.herokuapp.com/api/v1/auth/register";
+
+    const submitUser = async(e) => {
         e.preventDefault();
-        setUser({
-                "name": fullName,
-                "email": email,
-                "password": password,
-                "role": "publisher"
+        setUser(
+                {
+                    "name": "John 448888888888oerrr",
+                    "email": "johnr4774rrr@gmail.com",
+                    "password": "123456",
+                    
                 }
             )
-        //console.log(user)
-    }
+            // dispatch(register(user))
+            console.log("1111")
+            const response = await axios.post(registerURL,{ 
+                name: "John 448888oerrr",
+                email: "johnr44rrr@gmail.com",
+                password: "123456", 
+                role: " publisher"
+            })
+            console.log(response)
+        }
 
-    useEffect (()=>{
-        dispatch(register(user))
-    },[dispatch])
+    // useEffect (()=>{
+    //     dispatch(register(user))
+    // },[dispatch])
     
 
     return(

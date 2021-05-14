@@ -1,7 +1,8 @@
 import { combineReducers } from "redux";
-import {LoginReducer, RegisterReducer} from "./Reducer"
+import {LoginReducer, registerReducer, BootcampsReducer} from "./Reducer"
 
-export const rootReducer = combineReducers(
-    {LoginReducer, 
-    RegisterReducer}
-)
+export const rootReducer = combineReducers({
+    bootcamps:BootcampsReducer,
+    LoginReducer,
+    registerReducer
+})  
