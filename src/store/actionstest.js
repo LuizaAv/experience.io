@@ -9,7 +9,7 @@ import {
     bootcampLoadingSuccess,
     bootcampsLoadingFailure
 }
-    from '../store/actionTypes'
+    from '../Store/actionTypes'
 import axios from 'axios'
 
 const loginURL = "http://devcamp-api-node.herokuapp.com/api/v1/auth/login";

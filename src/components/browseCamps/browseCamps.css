@@ -1,0 +1,15 @@
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerDiv{
+    height: 100px;
+    width: 20.8vw;
+    background-color: #E05433;
+}
+
+
+.campName{
+    color: #E05433, 
+}
